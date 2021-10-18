@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("path");
 require("dotenv").config();
 const bcrypt = require("bcryptjs");
-const database = require("./database/connection");
+const database = require("./database");
 
 const app = express();
 app.use(cors());
