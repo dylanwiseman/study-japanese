@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const path = require("path");
 require("dotenv").config();
-const bcrypt = require("bcryptjs");
+// const bcrypt = require("bcryptjs");
 const database = require("./database");
 
 const app = express();
@@ -14,6 +14,12 @@ app.use(express.static(path.resolve(__dirname, "../client/build")));
 //Setup server port and connect to database:
 const PORT = process.env.PORT || 5004;
 database.connect();
+
+//Get vocab words:
+app.get("/vocab", async (req, res) => {
+  const result = await database.getVocab();
+  res.send(result);
+});
 
 // All other GET requests not handled before will return our React app
 app.get("*", (req, res) => {
