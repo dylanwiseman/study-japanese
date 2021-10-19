@@ -21,6 +21,13 @@ app.get("/vocab", async (req, res) => {
   res.send(result);
 });
 
+//Create new vocab word:
+app.post("/vocab/new", async (req, res) => {
+  const result = await database.createVocab(req.body);
+  console.log("result returned from create call:", result);
+  res.send(result);
+});
+
 // All other GET requests not handled before will return our React app
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));

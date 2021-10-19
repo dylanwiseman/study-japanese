@@ -11,6 +11,16 @@ async function getVocab() {
   return results;
 }
 
+//Create new vocab word:
+async function createVocab(newVocab) {
+  console.log("adding ", newVocab.word);
+  const result = await client
+    .db("study_japanese")
+    .collection("vocab")
+    .insertOne(newVocab);
+  return result;
+}
+
 // Main connnection function:
 async function connect() {
   try {
@@ -21,4 +31,4 @@ async function connect() {
   }
 }
 
-module.exports = { connect, getVocab };
+module.exports = { connect, getVocab, createVocab };
