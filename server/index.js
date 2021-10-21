@@ -28,6 +28,13 @@ app.post("/vocab/new", async (req, res) => {
   res.send(result);
 });
 
+//Delete Vocab word:
+app.delete("/vocab/delete", async (req, res) => {
+  console.log("delete req:", req.body);
+  const result = await database.deleteVocab(req.body);
+  res.send(result);
+});
+
 // All other GET requests not handled before will return our React app
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "../client/build", "index.html"));

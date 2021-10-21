@@ -22,6 +22,18 @@ async function createVocab(newVocab) {
   return result;
 }
 
+//Delete vocab word:
+async function deleteVocab(deleteWord) {
+  console.log("deleting vocab");
+  const confirmation = await client
+    .db("study_japanese")
+    .collection("vocab")
+    .deleteOne({ word: deleteWord });
+  console.log(confirmation);
+  const result = getVocab();
+  return result;
+}
+
 // Main connnection function:
 async function connect() {
   try {
@@ -32,4 +44,4 @@ async function connect() {
   }
 }
 
-module.exports = { connect, getVocab, createVocab };
+module.exports = { connect, getVocab, createVocab, deleteVocab };
