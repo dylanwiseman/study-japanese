@@ -14,10 +14,11 @@ async function getVocab() {
 //Create new vocab word:
 async function createVocab(newVocab) {
   console.log("adding ", newVocab.word);
-  const result = await client
+  const confirmation = await client
     .db("study_japanese")
     .collection("vocab")
     .insertOne(newVocab);
+  const result = getVocab();
   return result;
 }
 

@@ -1,10 +1,10 @@
-const initialState = { i: 0 };
+const initialState = {};
 
 export default function vocabReducer(state = initialState, action) {
+  console.log("action.value: ", action.value);
   switch (action.type) {
     case "GET_VOCAB": {
       return {
-        state,
         ...action.value,
       };
     }

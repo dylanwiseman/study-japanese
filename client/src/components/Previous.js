@@ -1,5 +1,9 @@
 import React from "react";
 
-export default function Previous() {
-  return <div></div>;
+export default function Previous(props) {
+  return (
+    <div>
+      <button onClick={props.previous}>Previous</button>
+    </div>
+  );
 }

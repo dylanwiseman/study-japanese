@@ -1,14 +1,14 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-export default function Card() {
-  const vocabArray = useSelector((state) => state.vocab);
-  let i = 0;
-  const activeWord = vocabArray[i];
+export default function Card(props) {
+  const vocabObj = useSelector((state) => state.vocab);
+  console.log(vocabObj);
+  const vocabArray = vocabObj.data;
+  const activeWord = vocabArray[props.index];
 
-  console.log("active word: ", activeWord.word);
+  console.log(vocabArray);
 
-  console.log("vocabArray recieved by Card comp:", vocabArray);
   return (
     <div>
       <div className="card-front">
