@@ -1,1 +1,112 @@
+body {
+  background-color: rgb(204, 25, 25);
+}
+.card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+  margin: 1em;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0.3em 0.3em 0em;
+}
 
+.scene {
+  width: 90%;
+  height: 200px;
+  margin: 3em auto;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+  margin: 1em auto;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 0.3em 0.3em 0em;
+}
+
+.card__face--back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  margin: 1em auto;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+  box-shadow: -0.3em -0.3em 0em;
+  background: black;
+  transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+h2 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+h4 {
+  font-size: 1.5em;
+  margin: 0;
+}
+h3 {
+  font-size: 2em;
+}
+
+.bottom-actions-div {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+/* .space-div {
+  flex-grow: 2;
+} */
+.prev-button-div {
+}
+.next-button-div {
+}
+.prev-next {
+  width: 7em;
+  height: 4em;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: -0.2em -0.2em 0em;
+  border: 1px solid black;
+}
+.prev-button {
+  box-shadow: 0.2em -0.2em 0em;
+}
+
+.next-button {
+  box-shadow: -0.2em -0.2em 0em;
+}

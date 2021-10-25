@@ -5,6 +5,7 @@ import Actions from "./Actions";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
+import TopActions from "./TopActions";
 
 function App() {
   const dispatch = useDispatch();
@@ -43,6 +44,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <TopActions />
       <Card index={index} />
       <Actions previous={previous} next={next} />
     </div>

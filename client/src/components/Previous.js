@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Previous(props) {
   return (
-    <div>
-      <button onClick={props.previous}>Previous</button>
+    <div className="prev-button-div">
+      <button className="prev-button prev-next" onClick={props.previous}>
+        {`<`}
+      </button>
     </div>
   );
 }
