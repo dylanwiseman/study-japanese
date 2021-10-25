@@ -23,12 +23,12 @@ async function createVocab(newVocab) {
 }
 
 //Delete vocab word:
-async function deleteVocab(deleteWord) {
+async function deleteVocab(deleteId) {
   console.log("deleting vocab");
   const confirmation = await client
     .db("study_japanese")
     .collection("vocab")
-    .deleteOne({ word: deleteWord });
+    .deleteOne({ _id: deleteId });
   console.log(confirmation);
   const result = getVocab();
   return result;
@@ -45,3 +45,5 @@ async function connect() {
 }
 
 module.exports = { connect, getVocab, createVocab, deleteVocab };
+
+// delete not working
