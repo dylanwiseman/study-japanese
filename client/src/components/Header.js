@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function Header() {
-  return <div>Study Japanese!</div>;
+  return (
+    <header>
+      <h1>べんきょう！</h1>
+    </header>
+  );
 }
