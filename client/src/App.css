@@ -103,10 +103,25 @@ h3 {
   box-shadow: -0.2em -0.2em 0em;
   border: 1px solid black;
 }
+
 .prev-button {
   box-shadow: 0.2em -0.2em 0em;
 }
 
+/* .prev-button:hover {
+  transform: translate(3px, -3px);
+  box-shadow: none;
+} */
+.prev-button:active {
+  transform: translate(3px, -3px);
+  box-shadow: none;
+  /* transition: 0.1s; */
+}
 .next-button {
   box-shadow: -0.2em -0.2em 0em;
+}
+.next-button:active {
+  transform: translate(-3px, -3px);
+  box-shadow: none;
+  /* transition: 0.1s; */
 }
