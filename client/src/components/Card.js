@@ -22,7 +22,7 @@ export default function Card(props) {
       <div className={flipToggle ? "card is-flipped" : "card"}>
         <div className="card__face card__face--front">
           <h2>{activeWord.word}</h2>
-          <h4>{activeWord.reading}</h4>
+          <h4>{props.readingToggle ? activeWord.reading : "??"}</h4>
         </div>
         <div className="card__face card__face--back">
           <h3>{activeWord.definition}</h3>

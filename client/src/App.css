@@ -81,6 +81,8 @@ h1 {
   box-shadow: 0.1em 0.3em 0.3em rgb(119, 0, 0);
   background: black;
   transform: rotateY(180deg);
+  font-family: "Press Start 2P", cursive;
+  font-size: 12px;
 }
 
 .card.is-flipped {

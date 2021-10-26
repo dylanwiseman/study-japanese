@@ -13,9 +13,15 @@ function App() {
   const vocabArray = vocabObj.data;
   const [index, setIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [readingToggle, setReadingToggle] = useState(true);
 
   const previous = () => {
     if (index > 0) setIndex(index - 1);
+  };
+
+  const toggleReading = () => {
+    setReadingToggle(!readingToggle);
+    console.log(readingToggle);
   };
 
   const next = () => {
@@ -44,8 +50,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <TopActions />
-      <Card index={index} />
+      <TopActions toggleReading={toggleReading} />
+      <Card index={index} readingToggle={readingToggle} />
       <Actions previous={previous} next={next} />
     </div>
   );
