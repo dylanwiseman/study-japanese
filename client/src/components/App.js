@@ -14,6 +14,8 @@ function App() {
   const [index, setIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [readingToggle, setReadingToggle] = useState(true);
+  const [newToggle, setNewToggle] = useState(false);
+  const [editToggle, setEditToggle] = useState(false);
 
   const previous = () => {
     if (index > 0) setIndex(index - 1);
