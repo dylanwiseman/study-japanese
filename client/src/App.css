@@ -107,6 +107,14 @@ h3 {
   display: flex;
   margin: auto;
   justify-content: space-between;
+  align-items: flex-end;
+  border-top: 7px solid rgba(119, 0, 0, 0.5);
+  border-left: 7px solid rgba(119, 0, 0, 0.5);
+  border-right: 7px solid rgba(150, 61, 61, 0.5);
+  border-bottom: 7px solid rgba(180, 61, 61, 0.5);
+  background-color: rgba(130, 0, 0, 0.5);
+  border-radius: 2px;
+  padding: 0 5px 5px 5px;
 }
 /* .space-div {
   flex-grow: 2;
@@ -148,27 +156,29 @@ h3 {
 /* Top Action Bar: */
 #top-actions-bar {
   width: 90%;
-  margin: 0 auto;
+  margin: 1em auto 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 2em;
-  border-top: 7px solid rgba(94, 94, 94, 0.5);
-  border-left: 7px solid rgba(94, 94, 94, 0.5);
-  border-right: 7px solid rgb(160, 160, 160, 0.5);
-  border-bottom: 7px solid rgb(160, 160, 160, 0.5);
-  background-color: rgba(94, 94, 94, 0.5);
+  align-items: flex-end;
+  border-top: 7px solid rgba(119, 0, 0, 0.5);
+  border-left: 7px solid rgba(119, 0, 0, 0.5);
+  border-right: 7px solid rgba(150, 61, 61, 0.5);
+  border-bottom: 7px solid rgba(180, 61, 61, 0.5);
+  background-color: rgba(130, 0, 0, 0.5);
+  border-radius: 2px;
+  padding: 0 4px 4px 4px;
 }
 .top-actions-buttons {
   width: 9em;
-  height: 4em;
+  height: 45px;
   font-size: 12px;
   background-color: white;
   border: none;
 
   border-radius: 2px;
   transition: 30ms;
-  box-shadow: 2px 0px 5px rgb(119, 0, 0);
+  box-shadow: 2px 0px 5px rgb(119, 0, 0, 0.5);
   font-family: "Press Start 2P", cursive;
   border-bottom: 5px solid rgba(117, 117, 117, 0.5);
   color: rgba(92, 92, 92, 0.7);
@@ -184,4 +194,13 @@ h3 {
 }
 #reading-button {
   background-color: rgb(145, 189, 255);
+}
+.clicked {
+  transform: translateY(1px);
+  box-shadow: none;
+  transition: 30ms;
+  border-bottom: 2px solid rgb(68, 68, 68);
+  height: 43px;
+  background-color: rgb(82, 110, 153) !important;
+  color: lightgray;
 }
