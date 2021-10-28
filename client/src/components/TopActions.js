@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Delete from "./Delete";
 import Edit from "./Edit";
 import New from "./New";
 import Reading from "./Reading";
@@ -8,8 +7,10 @@ export default function TopActions(props) {
   const [newToggle, setNewToggle] = useState(false);
   const [editToggle, setEditToggle] = useState(false);
   return (
-    <div>
+    <div id="top-actions-bar">
       <button
+        className="top-actions-buttons"
+        id="new-button"
         onClick={() => {
           setNewToggle(!newToggle);
         }}
@@ -17,15 +18,16 @@ export default function TopActions(props) {
         New
       </button>
       <button
+        className="top-actions-buttons"
+        id="edit-button"
         onClick={() => {
           setEditToggle(!editToggle);
         }}
       >
         Edit
       </button>
-      <Delete />
-      <Edit />
       <Reading toggleReading={props.toggleReading} />
+      {editToggle && <Edit />}
       {newToggle && <New />}
     </div>
   );

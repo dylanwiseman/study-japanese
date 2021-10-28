@@ -36,7 +36,7 @@ h1 {
 .scene {
   width: 90%;
   height: 200px;
-  margin: 3em auto;
+  margin: 1em auto 3em auto;
   perspective: 600px;
 }
 
@@ -66,6 +66,7 @@ h1 {
   border-radius: 5px;
   border: 1px solid black;
   box-shadow: 0.1em 0.3em 0.3em rgb(119, 0, 0);
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 .card__face--back {
@@ -142,4 +143,46 @@ h3 {
   background-color: rgb(186, 248, 194);
   border-bottom: 5px solid rgb(145, 194, 152);
   color: rgb(123, 167, 130);
+}
+
+/* Top Action Bar: */
+#top-actions-bar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2em;
+  border-top: 7px solid rgba(94, 94, 94, 0.5);
+  border-left: 7px solid rgba(94, 94, 94, 0.5);
+  border-right: 7px solid rgb(160, 160, 160, 0.5);
+  border-bottom: 7px solid rgb(160, 160, 160, 0.5);
+  background-color: rgba(94, 94, 94, 0.5);
+  padding-top: -4px;
+}
+.top-actions-buttons {
+  width: 9em;
+  height: 4em;
+  font-size: 12px;
+  background-color: white;
+  border: none;
+
+  border-radius: 2px;
+  transition: 30ms;
+  box-shadow: 2px 0px 5px rgb(119, 0, 0);
+  font-family: "Press Start 2P", cursive;
+  border-bottom: 5px solid rgba(117, 117, 117, 0.5);
+  color: rgba(92, 92, 92, 0.7);
+
+  margin-bottom: 0;
+}
+
+#new-button {
+  background-color: rgb(255, 255, 175);
+}
+#edit-button {
+  background-color: rgb(255, 163, 255);
+}
+#reading-button {
+  background-color: rgb(145, 189, 255);
 }
