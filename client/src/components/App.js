@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import TopActions from "./TopActions";
+import New from "./New";
 
 function App() {
   const dispatch = useDispatch();
@@ -24,6 +25,14 @@ function App() {
   const toggleReading = () => {
     setReadingToggle(!readingToggle);
     console.log(readingToggle);
+  };
+
+  const toggleEdit = () => {
+    setEditToggle(!editToggle);
+  };
+
+  const toggleNew = () => {
+    setNewToggle(!newToggle);
   };
 
   const next = () => {
@@ -52,8 +61,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <TopActions toggleReading={toggleReading} />
-      <Card index={index} readingToggle={readingToggle} />
+      <TopActions
+        toggleReading={toggleReading}
+        toggleNew={toggleNew}
+        toggleEdit={toggleEdit}
+      />
+      {!newToggle && <Card index={index} readingToggle={readingToggle} />}
+      {newToggle && <New toggleNew={toggleNew} />}
       <Actions previous={previous} next={next} />
     </div>
   );

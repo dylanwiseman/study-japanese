@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import axios from "axios";
 
-export default function New() {
+export default function New(props) {
   const dispatch = useDispatch();
 
   const [newWord, setNewWord] = useState("");
@@ -30,6 +30,7 @@ export default function New() {
       type: "GET_VOCAB",
       value: data,
     });
+    props.toggleNew();
   };
 
   return (
