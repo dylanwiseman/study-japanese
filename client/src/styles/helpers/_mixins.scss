@@ -1,0 +1,15 @@
+@mixin button-clicked(
+  $background-color,
+  $transition: 30ms,
+  $box-shadow: none,
+  $color: lightgray,
+  $transform: translateY(1px),
+  $border-bottom: 2px solid rgb(68, 68, 68)
+) {
+  background-color: $background-color;
+  transition: $transition;
+  box-shadow: $box-shadow;
+  color: $color;
+  transform: $transform;
+  border-bottom: $border-bottom;
+}

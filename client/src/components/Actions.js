@@ -1,7 +1,6 @@
 import React from "react";
 import Previous from "./Previous";
 import Next from "./Next";
-import "../App.css";
 
 export default function Actions(props) {
   return (

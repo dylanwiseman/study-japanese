@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import "../App.css";
 
 export default function Card(props) {
   const [flipToggle, setFlipToggle] = useState(false);
