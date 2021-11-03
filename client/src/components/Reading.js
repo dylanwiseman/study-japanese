@@ -6,7 +6,7 @@ export default function Reading(props) {
     <>
       <button
         className={
-          toggle ? "top-actions-buttons" : "top-actions-buttons clicked"
+          toggle ? "top-actions-buttons" : "top-actions-buttons reading-clicked"
         }
         id="reading-button"
         onClick={() => {
