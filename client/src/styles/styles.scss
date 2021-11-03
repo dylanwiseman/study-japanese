@@ -183,6 +183,6 @@ h3 {
   height: 43px;
 }
 .new-clicked {
-  @include button-clicked(rgb(194, 194, 134));
+  @include button-clicked(rgb(194, 194, 134) !important, $color: whitesmoke);
   height: 43px;
 }

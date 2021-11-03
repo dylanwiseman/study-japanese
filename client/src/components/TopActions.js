@@ -4,12 +4,18 @@ import Reading from "./Reading";
 
 export default function TopActions(props) {
   const [editToggle, setEditToggle] = useState(false);
+  const [newToggle, setNewToggle] = useState(false);
   return (
     <div id="top-actions-bar">
       <button
-        className="top-actions-buttons"
+        className={
+          newToggle ? "top-actions-buttons new-clicked" : "top-actions-buttons"
+        }
         id="new-button"
-        onClick={props.toggleNew}
+        onClick={() => {
+          props.toggleNew();
+          setNewToggle(!newToggle);
+        }}
       >
         New
       </button>

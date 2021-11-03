@@ -247,12 +247,12 @@ h3 {
 }
 
 .new-clicked {
-  background-color: #c2c286;
+  background-color: #c2c286 !important;
   -webkit-transition: 30ms;
   transition: 30ms;
   -webkit-box-shadow: none;
           box-shadow: none;
-  color: lightgray;
+  color: whitesmoke;
   -webkit-transform: translateY(1px);
           transform: translateY(1px);
   border-bottom: 2px solid #444444;
