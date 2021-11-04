@@ -13,3 +13,27 @@
   transform: $transform;
   border-bottom: $border-bottom;
 }
+
+@mixin inset-shadow($border-color) {
+  background-color: $border-color;
+  border-radius: 2px;
+  padding: 0 4px 4px 4px;
+  border-top: 7px solid darken($border-color, 30%);
+  border-left: 7px solid darken($border-color, 20%);
+  border-right: 7px solid lighten($border-color, 20%);
+  border-bottom: 7px solid lighten($border-color, 30%);
+}
+
+@mixin card-face($card-color, $text-color) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $card-color;
+  color: $text-color;
+  margin: 1em auto;
+  border-radius: 5px;
+  border: 1px solid $text-color;
+  box-shadow: 0.1em 0.3em 0.3em rgb(0, 0, 0, 0.4);
+}

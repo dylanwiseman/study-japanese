@@ -134,13 +134,13 @@ h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  border-top: 7px solid rgba(119, 0, 0, 0.5);
-  border-left: 7px solid rgba(119, 0, 0, 0.5);
-  border-right: 7px solid rgba(150, 61, 61, 0.5);
-  border-bottom: 7px solid rgba(180, 61, 61, 0.5);
-  background-color: rgba(130, 0, 0, 0.5);
+  background-color: #cc1919;
   border-radius: 2px;
-  padding: 0 5px 5px 5px;
+  padding: 0 4px 4px 4px;
+  border-top: 7px solid #440808;
+  border-left: 7px solid #710e0e;
+  border-right: 7px solid #eb6060;
+  border-bottom: 7px solid #f18d8d;
 }
 
 .prev-next {
@@ -197,13 +197,13 @@ h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  border-top: 7px solid rgba(119, 0, 0, 0.5);
-  border-left: 7px solid rgba(119, 0, 0, 0.5);
-  border-right: 7px solid rgba(150, 61, 61, 0.5);
-  border-bottom: 7px solid rgba(180, 61, 61, 0.5);
-  background-color: rgba(130, 0, 0, 0.5);
+  background-color: #cc1919;
   border-radius: 2px;
   padding: 0 4px 4px 4px;
+  border-top: 7px solid #440808;
+  border-left: 7px solid #710e0e;
+  border-right: 7px solid #eb6060;
+  border-bottom: 7px solid #f18d8d;
 }
 
 .top-actions-buttons {
