@@ -1,5 +1,5 @@
 body {
-  background-color: #cc1919;
+  background-color: gray;
   padding: 0;
   margin: 0;
 }
@@ -67,11 +67,12 @@ header h1 {
           align-items: center;
   text-align: center;
   background-color: whitesmoke;
+  color: black;
   margin: 1em auto;
   border-radius: 5px;
   border: 1px solid black;
-  -webkit-box-shadow: 0.1em 0.3em 0.3em #770000;
-          box-shadow: 0.1em 0.3em 0.3em #770000;
+  -webkit-box-shadow: 0.1em 0.3em 0.3em black;
+          box-shadow: 0.1em 0.3em 0.3em black;
   font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
@@ -90,13 +91,13 @@ header h1 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background-color: black;
   color: whitesmoke;
   margin: 1em auto;
   border-radius: 5px;
   border: 1px solid whitesmoke;
-  -webkit-box-shadow: 0.1em 0.3em 0.3em #770000;
-          box-shadow: 0.1em 0.3em 0.3em #770000;
-  background: black;
+  -webkit-box-shadow: 0.1em 0.3em 0.3em black;
+          box-shadow: 0.1em 0.3em 0.3em black;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   font-family: "Press Start 2P", cursive;
@@ -134,13 +135,13 @@ h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-color: #cc1919;
+  background-color: gray;
   border-radius: 2px;
   padding: 0 4px 4px 4px;
-  border-top: 7px solid #440808;
-  border-left: 7px solid #710e0e;
-  border-right: 7px solid #eb6060;
-  border-bottom: 7px solid #f18d8d;
+  border-top: 7px solid #343434;
+  border-left: 7px solid #4d4d4d;
+  border-right: 7px solid #b3b3b3;
+  border-bottom: 7px solid #cdcdcd;
 }
 
 .prev-next {
@@ -152,8 +153,8 @@ h3 {
   border-radius: 2px;
   -webkit-transition: 30ms;
   transition: 30ms;
-  -webkit-box-shadow: 2px 0px 5px #770000;
-          box-shadow: 2px 0px 5px #770000;
+  -webkit-box-shadow: 2px 2px 5px #1a1a1a;
+          box-shadow: 2px 2px 5px #1a1a1a;
   font-family: "Press Start 2P", cursive;
 }
 
@@ -197,13 +198,13 @@ h3 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-color: #cc1919;
+  background-color: gray;
   border-radius: 2px;
   padding: 0 4px 4px 4px;
-  border-top: 7px solid #440808;
-  border-left: 7px solid #710e0e;
-  border-right: 7px solid #eb6060;
-  border-bottom: 7px solid #f18d8d;
+  border-top: 7px solid #343434;
+  border-left: 7px solid #4d4d4d;
+  border-right: 7px solid #b3b3b3;
+  border-bottom: 7px solid #cdcdcd;
 }
 
 .top-actions-buttons {
