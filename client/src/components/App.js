@@ -13,6 +13,7 @@ function App() {
   const vocabObj = useSelector((state) => state.vocab);
   const vocabArray = vocabObj.data;
   const [index, setIndex] = useState(0);
+  //toggles:
   const [isLoading, setIsLoading] = useState(true);
   const [readingToggle, setReadingToggle] = useState(true);
   const [newToggle, setNewToggle] = useState(false);
